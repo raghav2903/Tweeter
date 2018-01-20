@@ -1,0 +1,25 @@
+worker tweet:
+# which_userp_db = GenServer.call(:"db", {:get_which_userp_db_userID_in, user_id})
+# GenServer.cast(:"userp_db#{which_userp_db}", {:add_tweet_to_userID_tweetList, user_id, tweet_id})
+
+master session validation:
+#validate the session
+        # user_session_map = Map.get(state, :user_session_map)
+        # valid_user_id = Map.get(user_session_map, session_id)
+
+
+    # def handle_cast({:subscribe, user_id, subscribe_id}, state) do
+    #     user_data_map = Map.get(state, :userData)
+    #     subscribe_ids_data = Map.get(user_data_map, subscribe_id)
+    #     subscribers_list = Map.get(subscribe_ids_data, :subscribers)
+    #     subscribers_list = [user_id | subscribers_list]
+    #     subscribe_ids_data = Map.put(subscribe_ids_data, :subscribers, subscribers_list)
+    #     user_data_map = Map.put(user_data_map, subscribe_id, subscribe_ids_data)
+    #     state = Map.put(state, :userData, user_data_map)
+    #     #state = put_in(state, [:userData, subscribe_id, :subscribers], subscribers_list)
+    #     {:noreply, state}
+    # end
+
+    IO.puts "Tweets = #{tweet_count}"
+    IO.puts "Time = #{time} seconds"
+    IO.puts "Tweets/sec = #{tweet_count/time}"

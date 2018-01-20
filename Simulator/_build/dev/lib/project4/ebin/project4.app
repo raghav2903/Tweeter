@@ -1,0 +1,10 @@
+{application,project4,
+             [{applications,[kernel,stdlib,elixir,logger]},
+              {description,"project4"},
+              {modules,['Elixir.Client','Elixir.Master','Elixir.MasterClient',
+                        'Elixir.Misc','Elixir.MsgDB','Elixir.Project4',
+                        'Elixir.Tweeting','Elixir.User_Profiles',
+                        'Elixir.Worker']},
+              {registered,[]},
+              {vsn,"0.1.0"},
+              {extra_applications,[logger]}]}.
